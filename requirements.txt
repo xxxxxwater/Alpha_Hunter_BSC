@@ -1,0 +1,14 @@
+# 币安Alpha Hunter - BSC专版依赖
+
+# Web3核心（BSC交易）
+web3==6.11.3
+eth-account==0.10.0
+
+# 环境变量管理
+python-dotenv==1.0.0
+
+# HTTP请求
+requests==2.31.0
+
+# 日志增强（可选）
+colorlog==6.8.0

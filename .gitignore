@@ -1,0 +1,89 @@
+# 币安Alpha Hunter - Git忽略文件
+
+# 🔴 敏感信息 - 绝对不要提交！
+.env
+*.env
+.env.*
+env_*.txt
+!env_example.txt
+!env_web3_example.txt
+
+# 私钥和钱包文件
+*private_key*
+*wallet*
+*.key
+*.pem
+*.keystore
+
+# 配置文件（可能包含敏感信息）
+config_local.json
+settings_local.json
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv
+
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# 交易记录（可能包含敏感信息）
+trades/
+transactions/
+positions.json
+positions_*.json
+

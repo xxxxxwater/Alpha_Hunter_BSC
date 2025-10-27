@@ -1,0 +1,69 @@
+# Alpha Hunter - 双聚合器版配置 (LI.FI + 1inch)
+
+# ============= 钱包私钥（必填）=============
+# 64位十六进制字符，不含0x前缀
+# 示例：abcd1234567890abcd1234567890abcd1234567890abcd1234567890abcd1234
+PRIVATE_KEY=your_private_key_here
+
+# ============= BSC RPC节点 =============
+# 默认使用币安官方免费节点
+# 如需更快更稳定，可使用付费RPC服务
+BSC_RPC_URL=https://bsc-dataseed1.binance.org
+
+# 其他可用的免费RPC:
+# BSC_RPC_URL=https://bsc-dataseed2.binance.org
+# BSC_RPC_URL=https://bsc-dataseed3.binance.org
+# BSC_RPC_URL=https://bsc.publicnode.com
+
+# 付费RPC（推荐，更快更稳定）:
+# BSC_RPC_URL=https://bnb-mainnet.g.alchemy.com/v2/YOUR_API_KEY
+# BSC_RPC_URL=https://bsc.nodereal.io/v1/YOUR_API_KEY
+
+
+# ============= 交易配置 =============
+# 每次买入金额（BNB数量）
+INITIAL_INVESTMENT=0.1
+
+# 滑点容忍度（0.10 = 10%）
+# 如果交易经常失败，可以适当提高（如0.1 = 10%）
+SLIPPAGE=0.05
+
+# 最大持仓数量（防止资金分散）
+MAX_POSITIONS=5
+
+
+# ============= 监控配置 =============
+# 检查持仓和止盈的间隔（秒）
+CHECK_INTERVAL=30
+
+# 循环等待流动性配置（新功能）
+# 是否默认启用循环等待模式（true/false）
+# WAIT_FOR_LIQUIDITY=false
+
+# 循环检测流动性的间隔（秒）
+# 建议：热门新币15-30秒，普通新币30-60秒
+# RETRY_INTERVAL=30
+
+
+# ============= API密钥（可选，提升限流）=============
+# LI.FI API密钥（注册后可提升限流上限）
+# 获取地址：https://li.fi/
+# 未注册：每2小时200次 | 已注册：每分钟200次
+# LIFI_API_KEY=your_lifi_api_key_here
+
+# 1inch API密钥（注册后可提升限流上限）
+# 获取地址：https://portal.1inch.dev/
+# 建议注册以获得更高的API限流配额
+# ONEINCH_API_KEY=your_1inch_api_key_here
+
+
+# ============= 高级选项（可选）=============
+# Gas价格倍数（1.0=正常，1.2=加速20%）
+# GAS_MULTIPLIER=1.2
+
+# 止损百分比（0.5 = 跌50%止损）
+# STOP_LOSS=0.5
+
+# API限流保护（每分钟最大请求数）
+# API_RATE_LIMIT=20
+
