@@ -44,6 +44,16 @@ CHECK_INTERVAL=30
 # 建议：热门新币15-30秒，普通新币30-60秒
 # RETRY_INTERVAL=30
 
+# ============= v2.9新增：强化API限流配置 =============
+# API限流 - 每分钟最大请求数（建议8-10，更保守）
+API_REQUESTS_PER_MINUTE=8
+
+# API限流 - 每小时最大请求数
+API_REQUESTS_PER_HOUR=80
+
+# 报价缓存时间（秒）- 减少重复请求
+QUOTE_CACHE_DURATION=15
+
 
 # ============= API密钥（可选，提升限流）=============
 # LI.FI API密钥（注册后可提升限流上限）
